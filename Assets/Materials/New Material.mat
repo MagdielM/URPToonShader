@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Material
+  m_Shader: {fileID: 4800000, guid: d94540711be0df94ca503e4e75f3e5a9, type: 3}
+  m_ShaderKeywords: MAIN_LIGHT_CALCULATE_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _SHADOWS_SOFT
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: f9b22948605e13e428a00ed3e5d64e8a, type: 3}
+        m_Scale: {x: -0.27, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RampArray:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RampAtlas:
+        m_Texture: {fileID: 2800000, guid: 073c8927622fbb44eaf2131a7ab91d46, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecularMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlphaClipThreshold: 0.46
+    - _BacklightAmount: 0.6
+    - _Backlighting: 0
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DiffuseRampIndex: 0
+    - _DstBlend: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HighlightBrightening: 0.093
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _RampRowHeight: 3
+    - _RimAngleRampIndex: 3.08
+    - _RimBrightening: 0
+    - _RimFactor: 1.25
+    - _RimGain: 0
+    - _RimLightAmount: 0.329
+    - _RimLightOpacity: 1
+    - _RimLighting: 0
+    - _RimRampIndex: 2
+    - _Smoothness: 0.687
+    - _SmoothnessTextureChannel: 0
+    - _SpecularBrightening: 0.003
+    - _SpecularGain: -1
+    - _SpecularHighlighting: 0
+    - _SpecularHighlights: 1
+    - _SpecularOpacity: 0.936
+    - _SpecularRampIndex: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _UseAlphaClipping: 1
+    - _UseNormalMap: 0
+    - _UseRampArray: 0
+    - _ZWrite: 1
+    - _rCurveNumSteps: 8
+    - _rCurveSCount: 2
+    - _rCurveStepCount: 2
+    m_Colors:
+    - _BaseMapTint: {r: 0.624, g: 0.624, b: 0.624, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _rCurvePt0_3: {r: 0, g: 1, b: 1, a: 0.93636036}
+    - _rCurvePt12_15: {r: 0, g: 0, b: 0, a: 0}
+    - _rCurvePt16_19: {r: 0, g: 0, b: 0, a: 0}
+    - _rCurvePt1_4: {r: 0.0000322517, g: 0.18346238, b: 0.39180684, a: 0.5059391}
+    - _rCurvePt20_23: {r: 0, g: 0, b: 0, a: 0}
+    - _rCurvePt24_27: {r: 0, g: 0, b: 0, a: 0}
+    - _rCurvePt28_31: {r: 0, g: 0, b: 0, a: 0}
+    - _rCurvePt4_7: {r: 1, g: 1, b: 1, a: 1}
+    - _rCurvePt5_8: {r: 0.6035297, g: 0.7374945, b: 0.8885372, a: 1}
+    - _rCurvePt8_11: {r: 0, g: 0, b: 0, a: 0}
+    - _rCurveVl0_3: {r: 1, g: 0, b: 1, a: 1}
+    - _rCurveVl12_15: {r: 0, g: 0, b: 0, a: 0}
+    - _rCurveVl16_19: {r: 0, g: 0, b: 0, a: 0}
+    - _rCurveVl1_4: {r: 0.9999931, g: 0.76232034, b: 0.5768436, a: 0.41739285}
+    - _rCurveVl20_23: {r: 0, g: 0, b: 0, a: 0}
+    - _rCurveVl24_27: {r: 0, g: 0, b: 0, a: 0}
+    - _rCurveVl28_31: {r: 0, g: 0, b: 0, a: 0}
+    - _rCurveVl4_7: {r: 0, g: 0, b: 0, a: 0}
+    - _rCurveVl5_8: {r: 0.2583235, g: 0.16750878, b: 0.081441686, a: 0}
+    - _rCurveVl8_11: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
