@@ -108,5 +108,4 @@ This section contains properties relating to rim lighting: the stark highlight t
 - Rim View Angle Curve: controls the relation between the viewing angle and the rim effect. Points closer to the right side of the curve influence the prevalence of the  rim effect when the view direction and light direction are more opposed, whereas points closer to the left side of the curve influence the prevalence of the effect when the directions are more aligned. For instance, with regards to point lights, the right side of the curve would influence the effect when the camera is facing away from the light, and the left side would influence the effect when the camera is facing towards the light. Typical curves resemble a downward slope going from one to zero.
 
 ![Rim View Angle Curve showing the effect of the right side of the curve](Images/rim_curve_right_example.png)
-
 ![Rim View Angle Curve showing the effect of the left side of the curve](Images/rim_curve_left_example.png)
