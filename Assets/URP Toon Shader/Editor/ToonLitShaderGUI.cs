@@ -1,9 +1,6 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
 using UnityEditor;
-using UnityEditor.PackageManager.UI;
 using UnityEngine;
 
 namespace ToonShaderURP
@@ -57,7 +54,8 @@ namespace ToonShaderURP
         private int rampCount;
         private int rowHeight;
         private AnimationCurve rimAngleCurve;
-        private Rect rimCurveRange = new Rect(0, 0, 1, 1);
+
+        private static readonly Rect rimCurveRange = new Rect(0, 0, 1, 1);
 
         #region GUIContent
         private readonly GUIContent settingsHeaderLabel = new GUIContent("Shader Settings");
@@ -114,16 +112,15 @@ namespace ToonShaderURP
             useRampArray.Value = EditorGUILayout.Toggle(useRampArrayLabel, useRampArray); // Use Texture Ramp Array Toggle
             EditorGUILayout.Space(1);
             useAlphaClipping.Value = EditorGUILayout.Toggle(useAlphaClippingLabel, useAlphaClipping); // Texture Array Toggle
-            EditorGUILayout.Space(4);
-            Rect lineRect = EditorGUILayout.GetControlRect(false, 1);
-            lineRect.x += 4;
-            lineRect.width -= 12;
-            EditorGUI.DrawRect(lineRect, new Color(0.35f, 0.35f, 0.35f, 1));
-            EditorGUILayout.Space(4);
+            //EditorGUILayout.Space(4);
+            //Rect lineRect = EditorGUILayout.GetControlRect(false, 1);
+            //lineRect.x += 4;
+            //lineRect.width -= 12;
+            //EditorGUI.DrawRect(lineRect, new Color(0.35f, 0.35f, 0.35f, 1));
+            //EditorGUILayout.Space(4);
 
-            materialEditor.RenderQueueField();
-            materialEditor.EnableInstancingField();
-            materialEditor.DoubleSidedGIField();
+            //materialEditor.RenderQueueField();
+            //materialEditor.DoubleSidedGIField();
 
             EditorGUILayout.Space(12);
 
@@ -132,11 +129,6 @@ namespace ToonShaderURP
             // General Properties
             materialEditor.SetDefaultGUIWidths();
             EditorGUILayout.LabelField(propertiesHeaderLabel, EditorStyles.boldLabel);
-            if (useNormalMap.floatValue > 0.5)
-            {
-                EditorGUILayout.Space(1);
-                materialEditor.TexturePropertySingleLine(normalMapLabel, normalMap); // Normal Map
-            }
 
             EditorGUI.BeginChangeCheck();
             if (useRampArray)
@@ -146,9 +138,15 @@ namespace ToonShaderURP
             else
             {
                 materialEditor.TexturePropertySingleLine(rampAtlasLabel, rampAtlas); // Ramp Atlas
+            }
+            if (useNormalMap.floatValue > 0.5)
+            {
+                materialEditor.TexturePropertySingleLine(normalMapLabel, normalMap); // Normal Map
+            }
+            if (!useRampArray) // Checked separately so normal map and ramp texture can be grouped
+            {
                 rowHeight = Mathf.Clamp(EditorGUILayout.IntField(rampRowHeightLabel, rampRowHeight), 1, int.MaxValue);
             }
-
             if (EditorGUI.EndChangeCheck()) // Set Ramp Count
             {
                 rampRowHeight.Value = rowHeight;
@@ -195,9 +193,8 @@ namespace ToonShaderURP
                 materialEditor.ShaderProperty(specularBrightening, specularBrighteningLabel); // Specular Brightening Label
 
                 materialEditor.SetDefaultGUIWidths();
+                EditorGUILayout.Space(12);
             }
-
-            EditorGUILayout.Space(12);
 
             // Rim Light Properties
             if (rimLighting)
@@ -262,19 +259,26 @@ namespace ToonShaderURP
                 rimRampIndex = new ShaderIntMirror(FindProperty("_RimRampIndex", properties));
                 #endregion
 
-                alphaClipThreshold = new ShaderFloatMirror(FindProperty("_AlphaClipThreshold", properties));
+                #region Specular Properties
                 smoothness = new ShaderFloatMirror(FindProperty("_Smoothness", properties));
                 specularOpacity = new ShaderFloatMirror(FindProperty("_SpecularOpacity", properties));
                 specularBrightening = new ShaderFloatMirror(FindProperty("_SpecularBrightening", properties));
+                #endregion
+
+                #region Rim Lighting Properties
                 rimFactor = new ShaderFloatMirror(FindProperty("_RimFactor", properties));
                 rimLightOpacity = new ShaderFloatMirror(FindProperty("_RimLightOpacity", properties));
                 rimBrightening = new ShaderFloatMirror(FindProperty("_RimBrightening", properties));
+                #endregion
+
+                alphaClipThreshold = new ShaderFloatMirror(FindProperty("_AlphaClipThreshold", properties));
                 rampRowHeight = new ShaderIntMirror(FindProperty("_RampRowHeight", properties));
 
                 #region Rim Curve
                 RepopulateCurveSteps();
                 PopulateRimCurve();
                 #endregion
+
                 SetRampCount();
 
                 guiState = GUIState.PostInit;
