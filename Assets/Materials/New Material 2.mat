@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: New Material 2
   m_Shader: {fileID: 4800000, guid: d94540711be0df94ca503e4e75f3e5a9, type: 3}
-  m_ShaderKeywords: MAIN_LIGHT_CALCULATE_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _SHADOWS_SOFT
+  m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -103,6 +103,7 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _RampRowHeight: 3
     - _RimBrightening: 0.1
     - _RimFactor: 1.5
     - _RimLightAmount: 0

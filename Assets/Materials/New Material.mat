@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: New Material
   m_Shader: {fileID: 4800000, guid: d94540711be0df94ca503e4e75f3e5a9, type: 3}
-  m_ShaderKeywords: MAIN_LIGHT_CALCULATE_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _SHADOWS_SOFT
+  m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -88,7 +88,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _AlphaClipThreshold: 0.46
+    - _AlphaClipThreshold: 0.564
     - _BacklightAmount: 0.6
     - _Backlighting: 0
     - _BumpScale: 1
@@ -106,20 +106,20 @@ Material:
     - _Parallax: 0.02
     - _RampRowHeight: 3
     - _RimAngleRampIndex: 3.08
-    - _RimBrightening: 0
-    - _RimFactor: 1.25
+    - _RimBrightening: 0.619
+    - _RimFactor: 1.532
     - _RimGain: 0
     - _RimLightAmount: 0.329
     - _RimLightOpacity: 1
-    - _RimLighting: 0
+    - _RimLighting: 1
     - _RimRampIndex: 2
-    - _Smoothness: 0.687
+    - _Smoothness: 0.813
     - _SmoothnessTextureChannel: 0
-    - _SpecularBrightening: 0.003
+    - _SpecularBrightening: 0.211
     - _SpecularGain: -1
-    - _SpecularHighlighting: 0
+    - _SpecularHighlighting: 1
     - _SpecularHighlights: 1
-    - _SpecularOpacity: 0.936
+    - _SpecularOpacity: 1
     - _SpecularRampIndex: 1
     - _SrcBlend: 1
     - _UVSec: 0
@@ -131,10 +131,10 @@ Material:
     - _rCurveSCount: 2
     - _rCurveStepCount: 2
     m_Colors:
-    - _BaseMapTint: {r: 0.624, g: 0.624, b: 0.624, a: 1}
+    - _BaseMapTint: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _rCurvePt0_3: {r: 0, g: 1, b: 1, a: 0.93636036}
+    - _rCurvePt0_3: {r: 0, g: 1, b: 0.8807107, a: 0.8959448}
     - _rCurvePt12_15: {r: 0, g: 0, b: 0, a: 0}
     - _rCurvePt16_19: {r: 0, g: 0, b: 0, a: 0}
     - _rCurvePt1_4: {r: 0.0000322517, g: 0.18346238, b: 0.39180684, a: 0.5059391}
@@ -144,7 +144,7 @@ Material:
     - _rCurvePt4_7: {r: 1, g: 1, b: 1, a: 1}
     - _rCurvePt5_8: {r: 0.6035297, g: 0.7374945, b: 0.8885372, a: 1}
     - _rCurvePt8_11: {r: 0, g: 0, b: 0, a: 0}
-    - _rCurveVl0_3: {r: 1, g: 0, b: 1, a: 1}
+    - _rCurveVl0_3: {r: 1, g: 0, b: 0.99999964, a: 0}
     - _rCurveVl12_15: {r: 0, g: 0, b: 0, a: 0}
     - _rCurveVl16_19: {r: 0, g: 0, b: 0, a: 0}
     - _rCurveVl1_4: {r: 0.9999931, g: 0.76232034, b: 0.5768436, a: 0.41739285}

@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637483335231030287
-    m_Hash: 1744059784
+      ticks: 637498716395028113
+    m_Hash: 514600708
   m_LockFileStatus:
     m_FilePath: D:/Unity/Unity Projects/URP Toon Shader/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637492772073872273
-    m_Hash: 2889836647
+      ticks: 637498716407781731
+    m_Hash: 3499993046
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -158,6 +158,7 @@ m_PackageAssets:
         - 3.0.1
         - 3.0.2
         - 3.0.3
+        - 3.0.4
         compatible:
         - 1.0.2
         - 1.0.6
@@ -180,6 +181,7 @@ m_PackageAssets:
         - 3.0.1
         - 3.0.2
         - 3.0.3
+        - 3.0.4
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
@@ -214,12 +216,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
         revision: abb44f053e9a41d2e00e149e32a19bcec76e98b4
         path: 
-    - packageId: com.unity.ide.visualstudio@2.0.5
+    - packageId: com.unity.ide.visualstudio@2.0.7
       testable: 0
       isDirectDependency: 1
-      version: 2.0.5
+      version: 2.0.7
       source: 1
-      resolvedPath: D:\Unity\Unity Projects\URP Toon Shader\Library\PackageCache\com.unity.ide.visualstudio@2.0.5
+      resolvedPath: D:\Unity\Unity Projects\URP Toon Shader\Library\PackageCache\com.unity.ide.visualstudio@2.0.7
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -247,6 +249,7 @@ m_PackageAssets:
         - 2.0.2
         - 2.0.3
         - 2.0.5
+        - 2.0.7
         compatible:
         - 1.0.2
         - 1.0.3
@@ -259,9 +262,20 @@ m_PackageAssets:
         - 2.0.2
         - 2.0.3
         - 2.0.5
-        verified: 2.0.5
-      dependencies: []
-      resolvedDependencies: []
+        - 2.0.7
+        verified: 2.0.7
+      dependencies:
+      - name: com.unity.test-framework
+        version: 1.1.9
+      resolvedDependencies:
+      - name: com.unity.test-framework
+        version: 1.1.20
+      - name: com.unity.ext.nunit
+        version: 1.0.6
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
       keywords: []
       registry:
         id: main
@@ -275,13 +289,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637400980850000000
+      datePublishedTicks: 637486638490000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-        revision: 83ca94e82bb6da515dc57e0d860b6b2224f56991
+        revision: dec282022c7a95fada560c36f53da9dd155a142c
         path: 
     - packageId: com.unity.ide.vscode@1.2.3
       testable: 0
@@ -783,6 +797,7 @@ m_PackageAssets:
         - 1.5.0
         - 1.5.1
         - 1.5.3
+        - 1.5.4
         - 2.0.0
         - 2.0.1-preview.1
         - 2.0.1
@@ -801,6 +816,7 @@ m_PackageAssets:
         - 2.1.0
         - 2.1.1
         - 2.1.3
+        - 2.1.4
         - 3.0.0-preview.1
         - 3.0.0-preview.3
         - 3.0.0-preview.4
@@ -815,10 +831,12 @@ m_PackageAssets:
         - 3.0.0
         - 3.0.1
         - 3.0.3
+        - 3.0.4
         compatible:
         - 3.0.1
         - 3.0.3
-        verified: 3.0.3
+        - 3.0.4
+        verified: 3.0.4
       dependencies:
       - name: com.unity.ugui
         version: 1.0.0
@@ -3386,10 +3404,12 @@ m_PackageAssets:
         - 2.2.2
         - 2.3.0
         - 3.0.1
+        - 3.0.3
         compatible:
         - 2.3.0
         - 3.0.1
-        verified: 3.0.1
+        - 3.0.3
+        verified: 3.0.3
       dependencies: []
       resolvedDependencies: []
       keywords: []
