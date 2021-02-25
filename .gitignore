@@ -3,3 +3,4 @@
 .vsconfig
 Temp/**
 *.log
+*.cache
