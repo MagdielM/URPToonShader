@@ -111,19 +111,19 @@ Material:
     - _RimGain: 0
     - _RimLightAmount: 0.329
     - _RimLightOpacity: 1
-    - _RimLighting: 1
+    - _RimLighting: 0
     - _RimRampIndex: 2
     - _Smoothness: 0.813
     - _SmoothnessTextureChannel: 0
     - _SpecularBrightening: 0.211
     - _SpecularGain: -1
-    - _SpecularHighlighting: 1
+    - _SpecularHighlighting: 0
     - _SpecularHighlights: 1
     - _SpecularOpacity: 1
     - _SpecularRampIndex: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _UseAlphaClipping: 1
+    - _UseAlphaClipping: 0
     - _UseNormalMap: 0
     - _UseRampArray: 0
     - _ZWrite: 1
