@@ -64,7 +64,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RampArray:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 18700000, guid: 940357d81c463144280ec2b4ec048f5b, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RampAtlas:
@@ -106,12 +106,12 @@ Material:
     - _Parallax: 0.02
     - _RampRowHeight: 3
     - _RimAngleRampIndex: 3.08
-    - _RimBrightening: 0.619
-    - _RimFactor: 1.532
+    - _RimBrightening: 0.004
+    - _RimFactor: 1.07
     - _RimGain: 0
     - _RimLightAmount: 0.329
     - _RimLightOpacity: 1
-    - _RimLighting: 0
+    - _RimLighting: 1
     - _RimRampIndex: 2
     - _Smoothness: 0.813
     - _SmoothnessTextureChannel: 0
@@ -123,35 +123,35 @@ Material:
     - _SpecularRampIndex: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _UseAlphaClipping: 0
+    - _UseAlphaClipping: 1
     - _UseNormalMap: 0
     - _UseRampArray: 0
     - _ZWrite: 1
     - _rCurveNumSteps: 8
     - _rCurveSCount: 2
-    - _rCurveStepCount: 2
+    - _rCurveStepCount: 4
     m_Colors:
     - _BaseMapTint: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _rCurvePt0_3: {r: 0, g: 1, b: 0.8807107, a: 0.8959448}
+    - _rCurvePt0_3: {r: 0, g: 0.1358304, b: 0.1370515, a: 0.99999887}
     - _rCurvePt12_15: {r: 0, g: 0, b: 0, a: 0}
     - _rCurvePt16_19: {r: 0, g: 0, b: 0, a: 0}
     - _rCurvePt1_4: {r: 0.0000322517, g: 0.18346238, b: 0.39180684, a: 0.5059391}
     - _rCurvePt20_23: {r: 0, g: 0, b: 0, a: 0}
     - _rCurvePt24_27: {r: 0, g: 0, b: 0, a: 0}
     - _rCurvePt28_31: {r: 0, g: 0, b: 0, a: 0}
-    - _rCurvePt4_7: {r: 1, g: 1, b: 1, a: 1}
+    - _rCurvePt4_7: {r: 0.9900045, g: 1, b: 1, a: 1}
     - _rCurvePt5_8: {r: 0.6035297, g: 0.7374945, b: 0.8885372, a: 1}
     - _rCurvePt8_11: {r: 0, g: 0, b: 0, a: 0}
-    - _rCurveVl0_3: {r: 1, g: 0, b: 0.99999964, a: 0}
+    - _rCurveVl0_3: {r: 1, g: 1, b: 0, a: 0}
     - _rCurveVl12_15: {r: 0, g: 0, b: 0, a: 0}
     - _rCurveVl16_19: {r: 0, g: 0, b: 0, a: 0}
     - _rCurveVl1_4: {r: 0.9999931, g: 0.76232034, b: 0.5768436, a: 0.41739285}
     - _rCurveVl20_23: {r: 0, g: 0, b: 0, a: 0}
     - _rCurveVl24_27: {r: 0, g: 0, b: 0, a: 0}
     - _rCurveVl28_31: {r: 0, g: 0, b: 0, a: 0}
-    - _rCurveVl4_7: {r: 0, g: 0, b: 0, a: 0}
+    - _rCurveVl4_7: {r: 0.002352953, g: 0, b: 0, a: 0}
     - _rCurveVl5_8: {r: 0.2583235, g: 0.16750878, b: 0.081441686, a: 0}
     - _rCurveVl8_11: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
